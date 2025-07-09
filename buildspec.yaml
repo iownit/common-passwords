@@ -15,5 +15,5 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      aws s3 cp ./passwords/common_passwords.txt "s3://$BUCKET_NAME/password_blacklist/blacklist.txt";
-      aws s3 cp ./passwords/common_passwords.txt "s3://enterprise-$BUCKET_NAME/password_blacklist/blacklist.txt";
+      aws s3 cp ./passwords/common_passwords.txt "s3://$BUCKET_NAME/common-passwords/blacklist.txt";
+      aws s3 cp ./passwords/common_passwords.txt "s3://enterprise-$BUCKET_NAME/common-passwords/blacklist.txt";
