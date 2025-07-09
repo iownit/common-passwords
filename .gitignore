@@ -1,0 +1,4 @@
+*.txt
+passwords/*
+!passwords/common_passwords.txt
+
