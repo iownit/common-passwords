@@ -8,6 +8,7 @@
 ## 📒 Passwords list rules
 
 - The passwords should be all SHA1 hashed.
+- Each line in the passwords list should contain a single password hash.
 - The passwords can contain comments if needed, but they should be prefixed with a non HEX character (e.g., `#`).
   - Example: `A48EEA9EF657D73D99748628412320B4B5031AB7#corastone`
 - The passwords list order is not important.
