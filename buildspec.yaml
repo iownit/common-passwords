@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  shell: bash
+  git-credential-helper: no
+
+proxy:
+  upload-artifacts: no
+  logs: yes
+
+batch:
+  fast-fail: true
+
+phases:
+  build:
+    on-failure: ABORT
+    commands:
+      aws s3 cp ./passwords/common_passwords.txt "s3://$BUCKET_NAME/password_blacklist/blacklist.txt";
+      aws s3 cp ./passwords/common_passwords.txt "s3://enterprise-$BUCKET_NAME/password_blacklist/blacklist.txt";
