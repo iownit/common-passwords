@@ -1,11 +1,11 @@
-# common-passwords
+# 🗝️ common-passwords 🗝️
 
-This repository contains:
+## 🧰 This repository contains:
 
 - Our list of common passwords, which is a collection of the most frequently used passwords across various platforms. The list is intended to help users avoid using easily guessable passwords and to promote better password security practices. So it can be uploaded and imported into the portal project.
 - A script to generate a password list from the common passwords, which can be used to update or modify the existing password list in the portal project.
 
-## Passwords list rules
+## 📒 Passwords list rules
 
 - The passwords should be all SHA1 hashed.
 - The passwords can contain comments if needed, but they should be prefixed with a non HEX character (e.g., `#`).
@@ -14,7 +14,7 @@ This repository contains:
 - The passwords list should not contain any duplicates.
 - The password list must be saved in the `passwords` directory as `common-passwords.txt`.
 
-## How to generate a password list automatically - [HaveIBeenPwned](https://haveibeenpwned.com/)
+## 🤖 How to generate a password list automatically - [HaveIBeenPwned](https://haveibeenpwned.com/)
 
 1. Make sure you have `brew` installed on your system. If you don't have it, you can install it by following the instructions at [brew.sh](https://brew.sh/).
 2. Make sure you have enough storage space available, as the script will download a large file (~55Gb) and process it.
@@ -31,7 +31,7 @@ This repository contains:
    ./generate-passwords.sh 100000
    ```
 
-## How to generate a password list manually - [HaveIBeenPwned](https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader?tab=readme-ov-file)
+## ✍️ How to generate a password list manually - [HaveIBeenPwned Downloader](https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader?tab=readme-ov-file)
 
 1. Install .NET SDK
 
